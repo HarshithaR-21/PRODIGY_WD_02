@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:url(https://wallpapercave.com/wp/wp3724619.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid;
+    width: 450px;
+    height: 250px;
+    border-radius: 80px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 251, 251, 0.194);
+    justify-content: center;
+    padding: 10px 20px;
+}
+#clock{
+    font-family: monospace;
+    font-size: 4em;
+    padding: 20px 50px;
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+}
+#controls{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+#controls button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: white;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+#startBtn{
+    background-color: rgb(69, 158, 18);
+}
+#resetBtn{
+    background-color: rgb(77, 158, 201);
+}
+#stopBtn{
+    background-color: rgb(216, 53, 53)
+}
+#startBtn:hover{
+    background-color: rgb(40, 110, 20);
+}
+#resetBtn:hover{
+    background-color: rgb(19, 99, 148);
+}
+#stopBtn:hover{
+    background-color: rgb(180, 47, 47)
+}
+#lapBtn{
+    background-color: hsl(271, 52%, 52%);
+}
+#lapBtn:hover{
+    background-color: hsl(271, 52%, 45%);
+}
+#resetLapBtn{
+    background-color: hsl(35, 73%, 56%);
+    display: flex;
+    justify-content: center;
+}
+#resetLapBtn:hover{
+    background-color: hsl(35, 73%, 46%);
+}
+#lap-display{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 251, 251, 0.194);
+    font-size: 1.5em;
+    font-weight: bold;
+}
